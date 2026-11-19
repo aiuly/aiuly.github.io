@@ -26,7 +26,7 @@ var links = {
     {img:"memes/music-pup.jpg"},
     {h:"i listen to daniel caesar"},
     {h:"my favorite matcha place"},
-    {t:"156 7th Ave S, New York, NY 10014", note:"", u:"https://www.google.com/maps/search/?api=1&query=156+7th+Ave+S,+New+York,+NY+10014"},
+    {t:"156 7th Ave S, New York, NY", note:"", u:"https://www.google.com/maps/search/?api=1&query=156+7th+Ave+S,+New+York,+NY+10014"},
     {t:"3208 Broadway, New York, NY", note:"", u:"https://www.google.com/maps/search/?api=1&query=3208+Broadway,+New+York,+NY"},
   ],
 
