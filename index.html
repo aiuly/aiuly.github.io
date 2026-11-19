@@ -40,6 +40,11 @@
     box-shadow:0 4px 14px rgba(60,50,100,.15)}
 
   #list li.h{font:15px/1.4 Georgia,serif;color:#555064;padding:14px 2px 0}
+  nav.hint button{animation:float 5s ease-in-out infinite,hop 6s ease-in-out infinite}
+  nav.hint button:nth-child(1){animation-delay:-1.2s,1.2s}
+  nav.hint button:nth-child(2){animation-delay:-2.5s,1.45s}
+  nav.hint button:nth-child(3){animation-delay:-3.7s,1.7s}
+  @keyframes hop{0%,12%,100%{transform:none}4%{transform:translateY(-9px) scale(1.08)}8%{transform:translateY(0) scale(.97)}}
   @keyframes in{to{opacity:1;transform:none}}
   @keyframes float{0%,100%{translate:0 0}50%{translate:0 -2px}}
   @media (prefers-reduced-motion:reduce){nav button{animation:none}}
@@ -48,7 +53,7 @@
 <body>
 <main>
   <div class="basket" aria-hidden="true">🧺</div>
-  <nav>
+  <nav class="hint">
     <button style="--d:#c99a92;--s:26px;--o:0px" data-k="reading" aria-label="reading"></button>
     <button style="--d:#d4bc84;--s:21px;--o:12px" data-k="film" aria-label="film"></button>
     <button style="--d:#9fae92;--s:24px;--o:-3px" data-k="memes" aria-label="memes"></button>
@@ -60,6 +65,7 @@
 var list=document.getElementById('list'),btns=document.querySelectorAll('nav button');
 function esc(x){return x.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 btns.forEach(function(b){b.addEventListener('click',function(){
+  document.querySelector('nav').classList.remove('hint');
   var open=b.classList.contains('on');
   btns.forEach(function(x){x.classList.remove('on')});
   list.innerHTML='';
