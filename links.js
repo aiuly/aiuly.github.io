@@ -8,11 +8,11 @@
 var links = {
 
   reading: [
-    {t:"The Mythology of Conscious AI", u:"https://www.noemamag.com/the-mythology-of-conscious-ai/"},
-    {t:"Drafts — Markus Kreutzer", u:"https://markuskreutzer.com/drafts.html"},
-    {t:"Thomas Aquinas: The World Is Divine", u:"https://ralphammer.com/thomas-aquinas-the-world-is-divine/"},
-    {t:"Seeing Is Forgetting the Name of the Thing One Sees", note:"Lawrence Weschler"},
-    {t:"The Art of Noticing", note:"Rob Walker"},
+    {t:"the mythology of conscious ai", u:"https://www.noemamag.com/the-mythology-of-conscious-ai/"},
+    {t:"drafts — markus kreutzer", u:"https://markuskreutzer.com/drafts.html"},
+    {t:"thomas aquinas: the world is divine", u:"https://ralphammer.com/thomas-aquinas-the-world-is-divine/"},
+    {t:"seeing is forgetting the name of the thing one sees", note:"Lawrence Weschler"},
+    {t:"the art of noticing", note:"Rob Walker"},
   ],
 
   film: [
